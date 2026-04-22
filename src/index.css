@@ -1,0 +1,41 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap');
+
+@theme {
+  --color-sony-black: #0a0a0a;
+  --color-sony-dark: #121212;
+  --color-sony-gold: #D4AF37;
+  --color-sony-gold-light: #F5D76E;
+  --color-sony-white: #FFFFFF;
+  
+  --font-sans: "Outfit", "Inter", sans-serif;
+  
+  --animate-pulse-slow: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+:root {
+  background-color: #0a0a0a;
+  color: #ffffff;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: var(--font-sans);
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.gold-gradient {
+  background: linear-gradient(135deg, #D4AF37 0%, #F5D76E 100%);
+}
+
+.gold-text-gradient {
+  background: linear-gradient(135deg, #D4AF37 0%, #F5D76E 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
